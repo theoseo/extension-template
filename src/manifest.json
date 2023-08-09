@@ -1,0 +1,23 @@
+{
+    "name": "extension-template",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "src/background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["src/content.jsx"]
+        }
+    ], 
+    "action": {
+        "default_title": "Extension Design"
+    },
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting"
+    ],
+    "homepage_url": "http://osslab.com"
+}
