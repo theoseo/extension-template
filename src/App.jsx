@@ -7,12 +7,12 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div class="z-infinite overflow-hidden fixed right-5 bottom-5 flex flex-col w-[calc(100%-42px)] max-w-[420px] max-h-[calc(100%-42px)] pt-7 bg-white rounded-[28px] drop-shadow-default">
-      <div class="relative px-8 after:z-[1] after:absolute after:top-full after:left-0 after:w-full after:h-7 after:bg-gradient-to-b after:from-white after:to-white/0">
-        <h1 class="text-3xl text-left font-bold truncate">
+    <div class="panel  flex flex-col w-full pt-7 bg-white drop-shadow-default">
+      <div class="px-8 ">
+        <h1 class="text-3xl text-left font-bold ">
           Powerful Video Security Without the Complexity
         </h1>
-        <button class="relative flex w-full mt-1 text-sm text-black/70 text-left">
+        <button class="relative flex w-full mt-1 text-sm text-black/70 text-left bg-white">
           <svg
             class="flex-none w-4 h-4 mr-2 translate-y-[3px]"
             viewBox="0 0 24 24"
@@ -23,7 +23,7 @@ function App() {
               fill="rgb(0,0,0)"
             ></path>
           </svg>
-          <span class="w-[calc(100%-24px)] truncate">
+          <span class="w-[calc(100%-24px)] ">
             localhost:1313/security-camera/dome-series/model-d62s
           </span>
         </button>

@@ -1,5 +1,5 @@
 {
-    "name": "extension-template",
+    "name": "extension-sidepanel",
     "version": "0.0.1",
     "manifest_version": 3,
     "background": {
@@ -11,13 +11,17 @@
             "js": ["src/content.jsx"]
         }
     ], 
+    "side_panel": {
+        "default_path": "src/sidePanel.html"
+    },
     "action": {
         "default_title": "Extension Design"
     },
     "permissions": [
         "storage",
         "activeTab",
-        "scripting"
+        "scripting",
+        "sidePanel"
     ],
     "homepage_url": "http://osslab.com"
 }

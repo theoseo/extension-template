@@ -1,4 +1,8 @@
-chrome.action.onClicked.addListener(async (tab)=> {
+/*chrome.action.onClicked.addListener(async (tab)=> {
     const { id: tabId, title, url: pageUrl } = tab
     chrome.tabs.sendMessage(tabId, { method: 'popupModal', data: tab })
 });
+*/
+chrome.sidePanel
+  .setPanelBehavior({ openPanelOnActionClick: true })
+  .catch((error) => console.error(error));
