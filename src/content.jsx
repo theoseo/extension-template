@@ -37,14 +37,19 @@ const showModal = () => {
 }
 
 const initialize = () => {
-    console.log("initialized!!!")
+    console.log("sidepanel initialized!!!")
     
     chrome.runtime.onMessage.addListener(async (request, sender, sendResponse) => {
-        console.log(sender);
+
+        if (sender !== undefined && sender !== null) {
+            console.log(`sender keys: ${Object.keys(sender)}`)
+        }
+        
         const { method } = request;
-        console.log(method);
+        console.log(`method: ${method}`);
         if (method === 'popupModal') {
-            showModal();
+            //showModal();
+            console.log("popupModal")
         }
     });
 }

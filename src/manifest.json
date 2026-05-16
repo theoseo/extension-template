@@ -21,7 +21,8 @@
         "storage",
         "activeTab",
         "scripting",
-        "sidePanel"
+        "sidePanel",
+        "tabs"
     ],
     "homepage_url": "http://osslab.com"
 }

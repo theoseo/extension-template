@@ -1,11 +1,19 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 
-function App() {
+function App(props) {
   const [count, setCount] = useState(0);
 
+  useEffect(() => {
+
+
+    /*console.log(props.docs)
+    console.log(props.docs.url)
+    console.log(props.docs.title)*/
+
+  });
   return (
     <div class="panel  flex flex-col w-full pt-7 bg-white drop-shadow-default">
       <div class="px-8 ">
